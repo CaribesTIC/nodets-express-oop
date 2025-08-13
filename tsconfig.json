@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,             // Necesario para TypeORM y decoradores
+    "emitDecoratorMetadata": true,              // Necesario para TypeORM
+    "sourceMap": true,                          // Añadido para mejor debugging
+    "declaration": false,                       // Opcional para generación de .d.ts
+    "removeComments": true,                     // Opcional para producción
+    "inlineSources": false,                     // Opcional
+    "noUnusedLocals": true,                     // Mejores prácticas
+    "noUnusedParameters": true,                 // Mejores prácticas
+    "noImplicitReturns": true,                  // Mejores prácticas
+    "noFallthroughCasesInSwitch": true,         // Mejores prácticas
+    "baseUrl": "./",                            // Útil para paths absolutos
+    "paths": {                                  // Opcional para alias de imports
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],                      // Más explícito que usar exclude
+  "exclude": ["node_modules", "dist", "test"]   // Actualizado
+  }
+
+
